@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'books',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     "django.middleware.security.SecurityMiddleware",
